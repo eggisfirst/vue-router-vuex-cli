@@ -12,5 +12,21 @@ export var router = new VueRouter({
     path: '/child',
     name: 'Child',
     component: resolve => require(['../pages/child'], resolve)
+  },
+  {
+    path: '/a',
+    name: 'a',
+    component: resolve => require(['../pages/a'], resolve)
+  
+  },
+  {
+    path: '/b',
+    name: 'b',
+    component: resolve => require(['../pages/b'], resolve)
+    
+  }, {
+    path: '/c',
+    name: 'c',
+    component: resolve => require(['../pages/c'], resolve)
   }]
 })

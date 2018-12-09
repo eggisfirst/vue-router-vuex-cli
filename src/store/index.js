@@ -3,11 +3,13 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 import home from './modules/home'
 import child from './modules/child'
+import tabStatus from './modules/status'
 
 export default new Vuex.Store({
   modules: {
     home,
-    child
+    child,
+    tabStatus
   }
 })
 

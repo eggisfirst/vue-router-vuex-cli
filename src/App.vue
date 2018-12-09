@@ -1,6 +1,10 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <!-- <keep-alive>
+      <router-view v-if="$route.meta.keepAlive" ></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive" ></router-view> -->
   </div>
 </template>
 
@@ -8,6 +12,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import store from './store'
+
 
 export default{
   name: 'app',
